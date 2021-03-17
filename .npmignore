@@ -1,0 +1,6 @@
+.husky/
+test/
+.eslintignore
+.travis.yml
+tsconfig.json
+yarn.lock
