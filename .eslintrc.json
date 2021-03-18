@@ -13,8 +13,7 @@
   "extends": [
     "eslint:all",
     "standard",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "arrow-body-style": [2, "always"],
