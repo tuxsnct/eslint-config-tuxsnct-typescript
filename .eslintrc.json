@@ -1,7 +1,6 @@
 {
   "env": {
-    "es2020": true,
-    "jest/globals": true
+    "es2020": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -9,7 +8,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "jest",
     "@typescript-eslint"
   ],
   "extends": [
