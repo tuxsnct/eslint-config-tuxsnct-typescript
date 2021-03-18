@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tuxsnct-typescript",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint configuration for TypeScript by tuxsnct",
   "keywords": [
     "eslint",
@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "eslint . --config=.eslintrc.json",
     "sort": "sort-package-json",
-    "test": "npm run lint && tape test/*.js"
+    "test": "yarn lint && tape test/*.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.18.0",
