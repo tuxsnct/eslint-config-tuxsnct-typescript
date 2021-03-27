@@ -8,20 +8,31 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "import"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
   "extends": [
-    "eslint:all",
+    "eslint:recommended",
     "standard",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript"
   ],
   "rules": {
     "arrow-body-style": [2, "always"],
     "function-call-argument-newline": [2, "consistent"],
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
     "indent": [2, 2],
-    "max-len": [2, { "code": 100, "tabWidth": 2 }],
-    "no-bitwise": 0,
-    "no-console": 0,
-    "no-magic-numbers": 0
+    "max-len": [2, { "code": 100, "tabWidth": 2 }]
   }
 }
