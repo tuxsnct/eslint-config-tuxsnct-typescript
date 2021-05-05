@@ -1,5 +1,5 @@
-const config = require('../')
 const test = require('tape')
+const config = require('../')
 
 test('test basic properties of config', (t) => {
   t.ok(isObject(config.parserOptions))
